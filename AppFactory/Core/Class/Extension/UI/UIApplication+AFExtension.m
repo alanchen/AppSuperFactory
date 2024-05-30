@@ -7,12 +7,14 @@
 //
 
 #import "UIApplication+AFExtension.h"
+#import "UIWindow+Key.h"
 
 @implementation UIApplication(AFExtension)
 
 -(UIViewController *)visibleViewController
 {
-    UIViewController *rootViewController = self.keyWindow ? self.keyWindow.rootViewController:nil;
+    UIWindow *keyWindow= [UIWindow appKeyWindow];
+    UIViewController *rootViewController = keyWindow ? keyWindow.rootViewController:nil;
     return [self getVisibleViewController:rootViewController];
 }
 

@@ -24,7 +24,7 @@ SYNTHESIZE_ASC_OBJ(myPlaceholderImageView, setMyPlaceholderImageView);
 
 - (UIActivityIndicatorView *)af_spinner{
     if(!self.mySpinner){
-        self.mySpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        self.mySpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
         [self.mySpinner setHidesWhenStopped:YES];
         [self addSubview:self.mySpinner];
         [self.mySpinner mas_makeConstraints:^(MASConstraintMaker *make) {

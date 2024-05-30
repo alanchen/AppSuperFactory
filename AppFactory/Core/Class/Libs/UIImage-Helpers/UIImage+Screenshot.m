@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+Screenshot.h"
+#import "UIWindow+Key.h"
 
 @implementation UIImage (Screenshot)
 
@@ -18,7 +19,7 @@
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
+    for (UIWindow *window in [UIWindow appWindows]) {
         if (![window respondsToSelector:@selector(screen)] || [window screen] == [UIScreen mainScreen]) {
             CGContextSaveGState(context);
 

@@ -8,6 +8,7 @@
 
 #import "ToastMessage.h"
 #import <AudioToolbox/AudioServices.h>
+#import "UIWindow+Key.h"
 
 @interface ToastMessage ()
 @property (nonatomic,weak) MBProgressHUD *currentToast;
@@ -44,7 +45,7 @@
     if(!str)
         return;
     
-    window = window ? window: [UIApplication sharedApplication].keyWindow;
+    window = window ? window: [UIWindow appKeyWindow];
 
     ToastMessage *toastInstance = [self sharedInstance];
     if(toastInstance.currentToast){

@@ -39,7 +39,7 @@
 {
     AFRadioButton *btn = [[self class] buttonWithType:UIButtonTypeCustom];
     [btn setExtendTappingAreaInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
-    [btn setAdjustsImageWhenHighlighted:NO];
+//    [btn setAdjustsImageWhenHighlighted:NO];
     [btn.titleLabel setAdjustsFontSizeToFitWidth:YES];
     btn.isAutoToggle = YES;
     return btn;

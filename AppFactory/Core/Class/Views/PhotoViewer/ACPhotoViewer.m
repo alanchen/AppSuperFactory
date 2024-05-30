@@ -208,7 +208,7 @@ typedef enum : NSUInteger {
     switch (status) {
         case ACPhotoViewerLoading:
             page.placeholderView.hidden = YES;
-            [page.af_spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
+            [page.af_spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleMedium];
             [page bringSubviewToFront:page.af_spinner];
             [page.af_spinner startAnimating];
             break;

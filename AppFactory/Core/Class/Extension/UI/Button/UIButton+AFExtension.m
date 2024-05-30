@@ -11,11 +11,18 @@
 
 @implementation UIButton(AFExtension)
 
+// https://stackoverflow.com/questions/68328038/imageedgeinsets-was-deprecated-in-ios-15-0
 -(void)setGap:(CGFloat)gap
 {
-    self.imageEdgeInsets = UIEdgeInsetsMake(0, -gap / 2, 0, gap / 2);
-    self.titleEdgeInsets = UIEdgeInsetsMake(0, gap / 2, 0 , - gap / 2);
-    self.contentEdgeInsets = UIEdgeInsetsMake(0, gap / 2, 0, gap / 2);
+//    self.imageEdgeInsets = UIEdgeInsetsMake(0, -gap / 2, 0, gap / 2);
+//    self.titleEdgeInsets = UIEdgeInsetsMake(0, gap / 2, 0 , - gap / 2);
+//    self.contentEdgeInsets = UIEdgeInsetsMake(0, gap / 2, 0, gap / 2);
+    
+    UIButtonConfiguration *configuration = self.configuration ? self.configuration : [UIButtonConfiguration plainButtonConfiguration];
+//    configuration.contentInsets = NSDirectionalEdgeInsetsMake(0, gap , 0, gap);
+    configuration.imagePadding = gap;
+    configuration.titlePadding = gap;
+    self.configuration = configuration;
 }
 
 -(void)setNormalImage:(UIImage *)img
@@ -64,7 +71,7 @@
 - (void)addHighlightAlphaEffect
 {
     __weak __typeof(self) weakSelf = self;
-    weakSelf.adjustsImageWhenHighlighted = NO;
+//    weakSelf.adjustsImageWhenHighlighted = NO;
 
     [self bk_addEventHandler:^(UIView *sender) {
         weakSelf.alpha = 0.5;

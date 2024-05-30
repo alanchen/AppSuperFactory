@@ -125,7 +125,7 @@
 
 + (UIActivityIndicatorView *)spinner
 {
-    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
     spinner.hidesWhenStopped = YES;
     [spinner stopAnimating];
     return spinner;

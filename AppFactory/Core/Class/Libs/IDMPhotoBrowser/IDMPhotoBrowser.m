@@ -10,7 +10,7 @@
 #import "IDMPhotoBrowser.h"
 #import "IDMZoomingScrollView.h"
 #import "IDMUtils.h"
-
+#import "UIWindow+Key.h"
 #import "pop/POP.h"
 /*
 #ifndef IDMPhotoBrowserLocalizedStrings
@@ -357,14 +357,19 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
                 finalY = -viewHalfHeight;
 
             CGFloat animationDuration = 0.35;
-
-            [UIView beginAnimations:nil context:NULL];
-            [UIView setAnimationDuration:animationDuration];
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-            [UIView setAnimationDelegate:self];
-            [scrollView setCenter:CGPointMake(finalX, finalY)];
-            self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
-            [UIView commitAnimations];
+//            [UIView beginAnimations:nil context:NULL];
+//            [UIView setAnimationDuration:animationDuration];
+//            [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+//            [UIView setAnimationDelegate:self];
+//            [scrollView setCenter:CGPointMake(finalX, finalY)];
+//            self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
+//            [UIView commitAnimations];
+            [UIView animateWithDuration:animationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                [scrollView setCenter:CGPointMake(finalX, finalY)];
+                self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
+            } completion:^(BOOL finished) {
+                
+            }];
 
             [self performSelector:@selector(doneButtonPressed:) withObject:self afterDelay:animationDuration];
         }
@@ -382,12 +387,17 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
 
             CGFloat animationDuration = (ABS(velocityY)*.0002)+.2;
 
-            [UIView beginAnimations:nil context:NULL];
-            [UIView setAnimationDuration:animationDuration];
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-            [UIView setAnimationDelegate:self];
-            [scrollView setCenter:CGPointMake(finalX, finalY)];
-            [UIView commitAnimations];
+//            [UIView beginAnimations:nil context:NULL];
+//            [UIView setAnimationDuration:animationDuration];
+//            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+//            [UIView setAnimationDelegate:self];
+//            [scrollView setCenter:CGPointMake(finalX, finalY)];
+//            [UIView commitAnimations];
+            [UIView animateWithDuration:animationDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                [scrollView setCenter:CGPointMake(finalX, finalY)];
+            } completion:^(BOOL finished) {
+                
+            }];
         }
     }
 }
@@ -528,7 +538,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
     // adjust bounds as the photo browser does
     if (@available(iOS 11.0, *)) {
         // use the windows safe area inset
-        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        UIWindow *window = [UIWindow appKeyWindow];
         UIEdgeInsets insets = UIEdgeInsetsMake(_statusBarHeight, 0, 0, 0);
         if (window != NULL) {
             insets = window.safeAreaInsets;
@@ -618,7 +628,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
 
 - (UIViewController *)topviewController
 {
-    UIViewController *topviewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *topviewController = [UIWindow appKeyWindow].rootViewController;
 
     while (topviewController.presentedViewController) {
         topviewController = topviewController.presentedViewController;
@@ -651,7 +661,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
     // Transition animation
     [self performPresentAnimation];
 
-    UIInterfaceOrientation currentOrientation = [UIApplication sharedApplication].statusBarOrientation;
+    UIInterfaceOrientation currentOrientation = [UIWindow appStatusBarOrientation];
     
     // Alan add Toolbar background View
     _bgView = [[UIView alloc] initWithFrame:[self frameForBackgrondViewAtOrientation:currentOrientation]];
@@ -763,7 +773,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
 	[super viewWillAppear:animated];
 
     // Status Bar
-    _statusBarOriginallyHidden = [UIApplication sharedApplication].statusBarHidden;
+    _statusBarOriginallyHidden = [UIWindow appIsStatusBarHidden];
 
     // Update UI
 	[self hideControlsAfterDelay];
@@ -808,7 +818,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
 	// Flag
 	_performingLayout = YES;
 
-    UIInterfaceOrientation currentOrientation = [UIApplication sharedApplication].statusBarOrientation;
+    UIInterfaceOrientation currentOrientation = [UIWindow appStatusBarOrientation];
 
     // BgView which Alan added
     _bgView.frame = [self frameForBackgrondViewAtOrientation:currentOrientation];
@@ -1420,7 +1430,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
             selfBlock.activityViewController = nil;
         }];
         
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
             [self presentViewController:self.activityViewController animated:YES completion:nil];
         }
         else { // iPad

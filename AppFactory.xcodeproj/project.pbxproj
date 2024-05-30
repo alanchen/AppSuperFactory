@@ -77,6 +77,7 @@
 		E79A89F423177CC90049968A /* IDMPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E79A89E823177CC90049968A /* IDMPhotoBrowser.m */; };
 		E79A89F523177CC90049968A /* IDMTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79A89EA23177CC90049968A /* IDMTapDetectingView.m */; };
 		E79DBEEA2828F72D0067FAE8 /* UIImage+NYXRotating.m in Sources */ = {isa = PBXBuildFile; fileRef = E79DBEE92828F72D0067FAE8 /* UIImage+NYXRotating.m */; };
+		E7A5E16D2C084D90008A2730 /* UIWindow+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A5E16C2C084D90008A2730 /* UIWindow+Key.m */; };
 		E7AF70C21FB0350C0040904F /* AFRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF70C11FB0350C0040904F /* AFRefreshFooter.m */; };
 		E7AF70C51FB036810040904F /* AFRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF70C41FB036810040904F /* AFRefreshHeader.m */; };
 		E7C20AD61F906A16004B70E0 /* CTFeedback.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7C20AD51F906A16004B70E0 /* CTFeedback.bundle */; };
@@ -296,6 +297,8 @@
 		E79A89EC23177CC90049968A /* IDMTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingImageView.h; sourceTree = "<group>"; };
 		E79DBEE82828F72D0067FAE8 /* UIImage+NYXRotating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NYXRotating.h"; sourceTree = "<group>"; };
 		E79DBEE92828F72D0067FAE8 /* UIImage+NYXRotating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NYXRotating.m"; sourceTree = "<group>"; };
+		E7A5E16B2C084D90008A2730 /* UIWindow+Key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Key.h"; sourceTree = "<group>"; };
+		E7A5E16C2C084D90008A2730 /* UIWindow+Key.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Key.m"; sourceTree = "<group>"; };
 		E7AD2E321F8DA8EA00F8E58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7AF70C01FB0350C0040904F /* AFRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFRefreshFooter.h; sourceTree = "<group>"; };
 		E7AF70C11FB0350C0040904F /* AFRefreshFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFRefreshFooter.m; sourceTree = "<group>"; };
@@ -933,6 +936,8 @@
 				E7F8C1501F8F1C1600B1E14B /* ViewController */,
 				E70E9CDB1F948E640017F881 /* UIColor+AFExtension.h */,
 				E70E9CDC1F948E640017F881 /* UIColor+AFExtension.m */,
+				E7A5E16B2C084D90008A2730 /* UIWindow+Key.h */,
+				E7A5E16C2C084D90008A2730 /* UIWindow+Key.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1500,6 +1505,7 @@
 				E76D7DC424C7E58A0062E0E5 /* NSDictionary+BlocksKit.m in Sources */,
 				E7F8C1D21F8F1C1600B1E14B /* NSDate+AFExtension.m in Sources */,
 				E7F8C20C1F8F1C1600B1E14B /* WebControllerHelper.m in Sources */,
+				E7A5E16D2C084D90008A2730 /* UIWindow+Key.m in Sources */,
 				E76D7DCE24C7E58A0062E0E5 /* NSArray+BlocksKit.m in Sources */,
 				E7F8C1FC1F8F1C1600B1E14B /* CTFeedbackCellItem.m in Sources */,
 				E7F8C20A1F8F1C1600B1E14B /* UIComponentFactory.m in Sources */,

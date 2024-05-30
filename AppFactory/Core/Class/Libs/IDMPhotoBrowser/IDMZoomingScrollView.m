@@ -9,6 +9,7 @@
 #import "IDMZoomingScrollView.h"
 #import "IDMPhotoBrowser.h"
 #import "IDMPhoto.h"
+#import "UIWindow+Key.h"
 
 // Declare private methods of browser
 @interface IDMPhotoBrowser ()
@@ -63,7 +64,8 @@
         CGFloat screenWidth = screenBound.size.width;
         CGFloat screenHeight = screenBound.size.height;
         
-        if ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationLandscapeLeft || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationLandscapeRight) {
+        UIInterfaceOrientation statusBarOrientation = [UIWindow appStatusBarOrientation];
+        if (statusBarOrientation == UIInterfaceOrientationLandscapeLeft || statusBarOrientation == UIInterfaceOrientationLandscapeRight) {
             screenWidth = screenBound.size.height;
             screenHeight = screenBound.size.width;
         }

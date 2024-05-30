@@ -13,7 +13,7 @@
 - (UIActivityIndicatorView *)spinner
 {
     if (!_spinner) {
-        _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
         _spinner.hidesWhenStopped = YES;
         [self addSubview:_spinner];
     }

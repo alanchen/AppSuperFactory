@@ -8,6 +8,7 @@
 
 #import "ViewControllerHelper.h"
 #import "UIApplication+AFExtension.h"
+#import "UIWindow+Key.h"
 
 @implementation ViewControllerHelper
 
@@ -26,7 +27,7 @@
                              popToRoot:(BOOL)popToRoot
                         withCompletion:(void (^)(void))completion
 {
-    UITabBarController *tabVC = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    UITabBarController *tabVC = (UITabBarController *)[UIWindow appKeyWindow].rootViewController;
     if([tabVC isKindOfClass:[UITabBarController class]]){
         [tabVC switchToSelectedIndex:selectedIndex popToRootWithCompletion:^{
             if(completion)completion();
