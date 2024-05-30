@@ -1,5 +1,5 @@
 PODS:
-  - ActionSheetPicker-3.0 (2.2.0)
+  - ActionSheetPicker-3.0 (2.7.4)
   - ArrayUtils (1.3)
   - Aspects (1.4.1)
   - DACircularProgress (2.3.1)
@@ -41,15 +41,15 @@ PODS:
     - HexColors (~> 4.0)
     - PPTopMostController
   - SAMKeychain (1.5.3)
-  - SDWebImage (5.15.8):
-    - SDWebImage/Core (= 5.15.8)
-  - SDWebImage/Core (5.15.8)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
   - SVProgressHUD (2.2.5)
   - UIDeviceIdentifier (2.3.0)
   - ViewUtils (1.1.2)
 
 DEPENDENCIES:
-  - ActionSheetPicker-3.0 (= 2.2.0)
+  - ActionSheetPicker-3.0 (~> 2.7.4)
   - ArrayUtils (~> 1.3)
   - Aspects (~> 1.4.1)
   - DACircularProgress
@@ -101,7 +101,7 @@ SPEC REPOS:
     - ViewUtils
 
 SPEC CHECKSUMS:
-  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  ActionSheetPicker-3.0: a380d57270b6b2d321c4add024ba5c466a7f5cfd
   ArrayUtils: 1444c5aab693bf1c8bde31145e10fc7c5cf930bf
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
@@ -122,11 +122,11 @@ SPEC CHECKSUMS:
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   RMessage: 31d44bd26a8f353f987d2e7194f3e9ffb203cbf2
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  SDWebImage: cb032eba469c54e0000e78bcb0a13cdde0a52798
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UIDeviceIdentifier: 442b65b4ff1832d4ca9c2a157815cb29ad981b17
   ViewUtils: 68e42c708a4b3912e39691cef5080282dc5013fb
 
-PODFILE CHECKSUM: 12f45a823a39f691e129718b9034da6f87976162
+PODFILE CHECKSUM: 9bac034aa85ba74a819378a94d8a3ed13c5a9fb2
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2

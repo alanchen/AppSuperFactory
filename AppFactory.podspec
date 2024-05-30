@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.license      = "MIT"
     s.author       = { "Alan" => "mvpi3.tw@gmail.com" }
     s.platform     = :ios
-    s.ios.deployment_target = "13.0"
+    s.ios.deployment_target = "15.0"
     s.source       = { :git => "https://github.com/alanchen/AppFactory.git", :tag => "master" }
     s.requires_arc = true
     s.resources    = "AppFactory/Core/Resource/*.{png,bundle}"
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 	s.dependency "SAMKeychain", "~> 1.5.2"
 	s.dependency "ArrayUtils", "~> 1.3"
 	s.dependency "NSHash", "~> 1.2.0"
-	s.dependency "ActionSheetPicker-3.0", "~> 2.7.1"
+	s.dependency "ActionSheetPicker-3.0", "~> 2.7.4"
 	s.dependency "DateTools", "~> 2.0.0"
 	s.dependency "hpple", "~> 0.2.0"
 	s.dependency "PINCache", "~> 3.0.1"

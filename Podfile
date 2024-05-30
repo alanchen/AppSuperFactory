@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '13.0'
+platform :ios, '15.0'
 use_frameworks!
 
 # ignore all warnings from all pods
@@ -36,7 +36,7 @@ pod 'pop'
 pod 'SAMKeychain', '~> 1.5.2'
 pod 'ArrayUtils', '~> 1.3'
 pod 'NSHash', '~> 1.2.0' # MD5 [string MD5]
-pod 'ActionSheetPicker-3.0', '2.2.0'
+pod 'ActionSheetPicker-3.0', '~>2.7.4'
 pod 'DateTools', '~> 2.0.0'
 pod 'hpple', '~> 0.2.0'
 pod 'PINCache', '~> 3.0.1-beta.5'
@@ -54,7 +54,7 @@ end
         target.build_settings(configuration.name)['VALID_ARCHS'] = '$(ARCHS_STANDARD)'
         target.build_settings(configuration.name)['ONLY_ACTIVE_ARCH'] = 'NO'
         configuration.build_settings['SWIFT_VERSION'] = '4.0'
-        configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+        configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       end
     end
   end
