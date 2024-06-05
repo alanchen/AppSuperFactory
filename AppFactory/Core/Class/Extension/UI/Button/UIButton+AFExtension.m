@@ -70,7 +70,7 @@
 - (void)addHighlightAlphaEffect
 {
     __weak __typeof(self) weakSelf = self;
-//    weakSelf.adjustsImageWhenHighlighted = NO;
+    weakSelf.adjustsImageWhenHighlighted = NO;
 
     [self bk_addEventHandler:^(UIView *sender) {
         weakSelf.alpha = 0.5;
