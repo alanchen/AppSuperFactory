@@ -1,5 +1,4 @@
 PODS:
-  - ActionSheetPicker-3.0 (2.7.5)
   - ArrayUtils (1.3)
   - Aspects (1.4.1)
   - DACircularProgress (2.3.1)
@@ -49,7 +48,6 @@ PODS:
   - ViewUtils (1.1.2)
 
 DEPENDENCIES:
-  - "ActionSheetPicker-3.0 (from `git@github.com:skywinder/ActionSheetPicker-3.0.git`, tag `2.7.5`)"
   - ArrayUtils (~> 1.3)
   - Aspects (~> 1.4.1)
   - DACircularProgress
@@ -99,18 +97,7 @@ SPEC REPOS:
     - UIDeviceIdentifier
     - ViewUtils
 
-EXTERNAL SOURCES:
-  ActionSheetPicker-3.0:
-    :git: "git@github.com:skywinder/ActionSheetPicker-3.0.git"
-    :tag: 2.7.5
-
-CHECKOUT OPTIONS:
-  ActionSheetPicker-3.0:
-    :git: "git@github.com:skywinder/ActionSheetPicker-3.0.git"
-    :tag: 2.7.5
-
 SPEC CHECKSUMS:
-  ActionSheetPicker-3.0: d7c52e423ce7b09097c64fb0b577f5c601b220c6
   ArrayUtils: 1444c5aab693bf1c8bde31145e10fc7c5cf930bf
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
@@ -136,6 +123,6 @@ SPEC CHECKSUMS:
   UIDeviceIdentifier: 442b65b4ff1832d4ca9c2a157815cb29ad981b17
   ViewUtils: 68e42c708a4b3912e39691cef5080282dc5013fb
 
-PODFILE CHECKSUM: 72d7cf1a88c39f89775eab886e2966852453b0b4
+PODFILE CHECKSUM: 683b512988db343f8559d3c96c6f2ad6fa4faf62
 
 COCOAPODS: 1.16.2
