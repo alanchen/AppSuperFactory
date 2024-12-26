@@ -36,7 +36,7 @@ pod 'pop'
 pod 'SAMKeychain', '~> 1.5.2'
 pod 'ArrayUtils', '~> 1.3'
 pod 'NSHash', '~> 1.2.0' # MD5 [string MD5]
-pod 'ActionSheetPicker-3.0', '~>2.7.4'
+pod 'ActionSheetPicker-3.0', :git => 'git@github.com:skywinder/ActionSheetPicker-3.0.git', :tag => "2.7.5"
 pod 'DateTools', '~> 2.0.0'
 pod 'hpple', '~> 0.2.0'
 pod 'PINCache', '~> 3.0.1-beta.5'

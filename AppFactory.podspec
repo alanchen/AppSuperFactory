@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
 	s.dependency "ArrayUtils", "~> 1.3"
 	s.dependency "NSHash", "~> 1.2.0"
 	s.dependency "ActionSheetPicker-3.0", "~> 2.7.4"
+	s.dependency "ActionSheetPicker-3.0", :git => "git@github.com:skywinder/ActionSheetPicker-3.0.git", :tag => "2.7.5"
 	s.dependency "DateTools", "~> 2.0.0"
 	s.dependency "hpple", "~> 0.2.0"
 	s.dependency "PINCache", "~> 3.0.1"
