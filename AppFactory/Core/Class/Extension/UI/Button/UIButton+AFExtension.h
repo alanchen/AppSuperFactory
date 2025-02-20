@@ -35,5 +35,6 @@
 - (void)setLegacyImageEdgeInsets:(UIEdgeInsets)imageEdgeInsets;
 - (void)setLegacyTitleEdgeInsets:(UIEdgeInsets)titleEdgeInsets;
 - (void)setLegacyContentEdgeInsets:(UIEdgeInsets)contentEdgeInsets;
+- (void)legacyShowsTouchWhenHighlighted:(BOOL)showsTouchWhenHighlighted;
 
 @end

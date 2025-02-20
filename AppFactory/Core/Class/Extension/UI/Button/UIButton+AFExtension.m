@@ -113,4 +113,9 @@
     self.contentEdgeInsets = contentEdgeInsets;
 }
 
+- (void)legacyShowsTouchWhenHighlighted:(BOOL)showsTouchWhenHighlighted
+{
+    self.showsTouchWhenHighlighted = showsTouchWhenHighlighted;
+}
+
 @end
