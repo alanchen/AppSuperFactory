@@ -10,7 +10,7 @@
 #import "AppFactory.h"
 #import "UIColor+AFExtension.h"
 #import "BlocksKit.h"
-#import <ViewUtils/ViewUtils.h>
+#import "ViewUtils.h"
 #import <Masonry/Masonry.h>
 
 @implementation AFButtonsView

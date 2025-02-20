@@ -45,7 +45,6 @@ PODS:
   - SDWebImage/Core (5.20.0)
   - SVProgressHUD (2.2.5)
   - UIDeviceIdentifier (2.3.0)
-  - ViewUtils (1.1.2)
 
 DEPENDENCIES:
   - ArrayUtils (~> 1.3)
@@ -68,7 +67,6 @@ DEPENDENCIES:
   - SDWebImage (~> 5.0)
   - SVProgressHUD (= 2.2.5)
   - UIDeviceIdentifier
-  - ViewUtils (~> 1.1.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -95,7 +93,6 @@ SPEC REPOS:
     - SDWebImage
     - SVProgressHUD
     - UIDeviceIdentifier
-    - ViewUtils
 
 SPEC CHECKSUMS:
   ArrayUtils: 1444c5aab693bf1c8bde31145e10fc7c5cf930bf
@@ -121,8 +118,7 @@ SPEC CHECKSUMS:
   SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UIDeviceIdentifier: 442b65b4ff1832d4ca9c2a157815cb29ad981b17
-  ViewUtils: 68e42c708a4b3912e39691cef5080282dc5013fb
 
-PODFILE CHECKSUM: 683b512988db343f8559d3c96c6f2ad6fa4faf62
+PODFILE CHECKSUM: 265bf30fd461a92a081f9c76f004109c67adce2b
 
 COCOAPODS: 1.16.2

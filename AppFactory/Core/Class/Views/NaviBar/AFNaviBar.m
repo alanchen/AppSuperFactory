@@ -7,7 +7,7 @@
 //
 
 #import "AFNaviBar.h"
-#import <ViewUtils/ViewUtils.h>
+#import "ViewUtils.h"
 #import "UIButton+AFExtension.h"
 #import "UIButton+ExpandHitArea.h"
 #import "UIView+AFExtension.h"

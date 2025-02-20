@@ -7,7 +7,7 @@
 //
 
 #import <Masonry/Masonry.h>
-#import <ViewUtils/ViewUtils.h>
+#import "ViewUtils.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "BlocksKit+UIKit.h"
 #import "BlocksKit.h"

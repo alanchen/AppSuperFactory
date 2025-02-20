@@ -25,7 +25,6 @@ pod 'ObjcAssociatedObjectHelpers', '2.0.1'
 pod 'SDWebImage', '~> 5.0'
 
 # View
-pod 'ViewUtils', '~> 1.1.2'
 pod 'MJRefresh', '~> 3.1.4'
 pod 'MBProgressHUD', '~> 1.1.0'
 pod 'RMessage', '~> 2.1.5'

@@ -9,7 +9,7 @@
 #import "NotificationNumberView.h"
 #import "UIColor+AFExtension.h"
 #import <Masonry/Masonry.h>
-#import <ViewUtils/ViewUtils.h>
+#import "ViewUtils.h"
 #import "UILabel+AFExtension.h"
 
 @implementation NotificationNumberView
