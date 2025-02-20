@@ -31,4 +31,9 @@
 
 -(void)addHighlightAlphaEffect;
 
+- (void)setLegacyAdjustsImageWhenHighlighted:(BOOL)adjustsImageWhenHighlighted;
+- (void)setLegacyImageEdgeInsets:(UIEdgeInsets)imageEdgeInsets;
+- (void)setLegacyTitleEdgeInsets:(UIEdgeInsets)titleEdgeInsets;
+- (void)setLegacyContentEdgeInsets:(UIEdgeInsets)contentEdgeInsets;
+
 @end

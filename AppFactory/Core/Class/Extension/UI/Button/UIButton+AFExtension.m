@@ -93,4 +93,24 @@
     } forControlEvents:UIControlEventTouchDragOutside];
 }
 
+- (void)setLegacyAdjustsImageWhenHighlighted:(BOOL)adjustsImageWhenHighlighted
+{
+    self.adjustsImageWhenHighlighted = adjustsImageWhenHighlighted;
+}
+
+- (void)setLegacyImageEdgeInsets:(UIEdgeInsets)imageEdgeInsets
+{
+    self.imageEdgeInsets = imageEdgeInsets;
+}
+
+- (void)setLegacyTitleEdgeInsets:(UIEdgeInsets)titleEdgeInsets
+{
+    self.titleEdgeInsets = titleEdgeInsets;
+}
+
+- (void)setLegacyContentEdgeInsets:(UIEdgeInsets)contentEdgeInsets
+{
+    self.contentEdgeInsets = contentEdgeInsets;
+}
+
 @end
