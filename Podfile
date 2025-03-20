@@ -9,7 +9,7 @@ target "AppFactory" do
 
 # Basic SDK
 #pod 'AFNetworking', '~> 4.0'
-pod 'ReactiveObjC', '~> 3.0.0'
+pod 'ReactiveObjC', '~> 3.1.1'
 pod 'PromiseKit', '~> 6.9.0'
 pod 'MJExtension', '3.0.13'
 pod 'Aspects', '~> 1.4.1'

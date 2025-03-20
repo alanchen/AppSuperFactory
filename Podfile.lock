@@ -35,7 +35,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.9.0):
     - PromiseKit/CorePromise
-  - ReactiveObjC (3.0.0)
+  - ReactiveObjC (3.1.1)
   - RMessage (2.1.5):
     - HexColors (~> 4.0)
     - PPTopMostController
@@ -61,7 +61,7 @@ DEPENDENCIES:
   - PINCache (~> 3.0.1-beta.5)
   - pop
   - PromiseKit (~> 6.9.0)
-  - ReactiveObjC (~> 3.0.0)
+  - ReactiveObjC (~> 3.1.1)
   - RMessage (~> 2.1.5)
   - SAMKeychain (~> 1.5.2)
   - SDWebImage (~> 5.0)
@@ -112,13 +112,13 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PPTopMostController: 4e6f1e5f8c645bdcc74cd837a20f607ff262c048
   PromiseKit: 97397236f9e9c443d5b70a941d49cad25160af7a
-  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RMessage: 31d44bd26a8f353f987d2e7194f3e9ffb203cbf2
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UIDeviceIdentifier: 442b65b4ff1832d4ca9c2a157815cb29ad981b17
 
-PODFILE CHECKSUM: 265bf30fd461a92a081f9c76f004109c67adce2b
+PODFILE CHECKSUM: 459114a9c0ce09a1859e3a5f8107f851b65bdf70
 
 COCOAPODS: 1.16.2

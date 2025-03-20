@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'AppFactory/Core/**/*.h'
     s.source_files = 'AppFactory/Core/**/*.{h,m}'
 
-	s.dependency "ReactiveObjC", "~> 3.0.0"
+	s.dependency "ReactiveObjC", "~> 3.1.1"
 	s.dependency "PromiseKit", "~> 6.9.0"
 	s.dependency "MJExtension", "~> 3.0.13"
 	s.dependency "Aspects", "~> 1.4.1"
